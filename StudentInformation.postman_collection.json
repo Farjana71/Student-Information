@@ -156,7 +156,7 @@
 							"var jsonData = pm.response.json();\r",
 							"pm.test(\"ID Validation\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.data.id).to.eql(2665447);\r",
+							"    pm.expect(jsonData.data.id).to.eql(pm.environment.get(\"id\"));\r",
 							"});\r",
 							"var jsonData = pm.response.json();\r",
 							"pm.test(\"First Name Validation\", function () {\r",
